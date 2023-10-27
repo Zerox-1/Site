@@ -1,0 +1,40 @@
+  #miniWindow {
+      display: none;
+      width: 300px;
+      height: 200px;
+      border: 1px solid black;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #miniWindowHeader {
+      background-color: gray;
+      padding: 5px;
+  }
+
+  #miniWindowContent {
+      padding: 5px;
+  }
+
+  #User_png {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+  }
+
+  #openWindowButton {
+      border-radius: 50%;
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+  }
+
+  #Ring_png{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top:100px;
+    left: 100px;
+  }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Место для названия в виде вкладки</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="подарки, мои подарки, идеи для подарков, праздник, день рождения, выбрать подарок">
+    <meta name="description" content="место для мини текста для поисковика в браузере">
+    <link rel="shortcut icon" href="место для ссылки на картинку иконки">
+
+
+    <!-- Bootstrap reboot (для сброса стилей) -->
+    <link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+    <!-- Bootstrap сетка -->
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+    <!-- Шрифты с Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Стили сайта -->
+    <link rel="stylesheet" href="WPg.css">
+    <style>
+        @import url(styles.css);
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Подарки+Подарки</a>
+
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="WPg.html" id="WButton">Женщины</a></li>
+                    <li><a href="index.html" id="MButton">Главная</a></li>
+                    <li><a href="APg.html">Все подарки</a></li>
+                </ul>
+            </div>
+            <input type="text" class="search" placeholder="Поиск товаров">
+        </div>
+    </nav>
+    <div class="ctr">
+        <div id="miniWindow">
+            <div id="miniWindowHeader">Аккаунт</div>
+            <div id="miniWindowContent">
+                <form>
+                    <p>
+                        <Label for="email"> Email:</Label>
+                        <input type="email" placeholder="user@gmail.com" id="email" name="email" />
+                    </p>
+                    <p>
+                        <label for="phone">Телефон: </label>
+                        <input type="tel" pattern="[0-9]{10}" placeholder="(XXX)-XXX-XXXX" id="phone" name="phone" />
+                    </p>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <button id="openWindowButton"><img id="User_png" src="User.png"></button>
+    </div>
+</body>
+<script>
+    var openWindowButton = document.getElementById('openWindowButton');
+    var miniWindow = document.getElementById('miniWindow');
+    var WButton = document.getElementById('WButton');
+    var Pg1 = document.getElementById('Pg1');
+    var Pg2 = document.getElementById('Pg2');
+    openWindowButton.addEventListener('click', function () {
+      if (miniWindow.style.display != 'block') {
+        miniWindow.style.display = 'block';
+      }
+      else {
+        miniWindow.style.display = 'none';
+      }
+
+    });
+  </script>
+</html>
