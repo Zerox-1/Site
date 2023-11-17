@@ -2,65 +2,121 @@
 <html lang="en">
 
 <head>
-    <title>Место для названия в виде вкладки</title>
-    <meta charset="utf-8">
-    <meta name="keywords" content="подарки, мои подарки, идеи для подарков, праздник, день рождения, выбрать подарок">
-    <meta name="description" content="место для мини текста для поисковика в браузере">
-    <link rel="shortcut icon" href="место для ссылки на картинку иконки">
+  <title>Место для названия в виде вкладки</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="подарки, мои подарки, идеи для подарков, праздник, день рождения, выбрать подарок">
+  <meta name="description" content="место для мини текста для поисковика в браузере">
+  <link rel="shortcut icon" href="место для ссылки на картинку иконки">
 
 
-    <!-- Bootstrap reboot (для сброса стилей) -->
-    <link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+  <!-- Bootstrap reboot (для сброса стилей) -->
+  <link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
 
-    <!-- Bootstrap сетка -->
-    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+  <!-- Bootstrap сетка -->
+  <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
 
-    <!-- Шрифты с Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+  <!-- Шрифты с Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
-    <!-- Стили сайта -->
-    <link rel="stylesheet" href="WPg.css">
-    <style>
-        @import url(styles.css);
-    </style>
+  <!-- Стили сайта -->
+  <link rel="stylesheet" href="WPg.css">
+  <style>
+    @import url(WPg.css);
+  </style>
+  <script src="script.js"></script>
+  <script src="data.json"></script>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container">
-          <a href="#" class="navbar-brand">Подарки+Подарки</a>
-    
-          <div class="navbar-wrap">
-            <ul class="navbar-menu">
-              <li><a href="index.html" id="MButton">Главная</a></li>
-              <li><a href="Mpg.html">Мужчины</a></li>
-              <li><a href="APg.html">Все подарки</a></li>
-            </ul>
-          </div>
-          <input type="text" class="search" placeholder="Поиск товаров">
-        </div>
-      </nav>
-      <div class="ctr">
-        <div id="miniWindow">
-          <div id="miniWindowHeader">Аккаунт</div>
-          <div id="miniWindowContent">
-            <form>
-              <p>
-                <Label for="email"> Email:</Label>
-                <input type="email" placeholder="user@gmail.com" id="email" name="email" />
-              </p>
-              <p>
-                <label for="phone">Телефон: </label>
-                <input type="tel" pattern="[0-9]{10}" placeholder="(XXX)-XXX-XXXX" id="phone" name="phone" />
-              </p>
-              <button type="submit">Отправить</button>
-            </form>
-          </div>
-        </div>
-        <button id="openWindowButton"><img id="User_png" src="User.png"></button>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">Подарки+Подарки</a>
+
+      <div class="navbar-wrap">
+        <ul class="navbar-menu">
+          <li><a href="index.html" id="MButton">Главная</a></li>
+          <li><a href="Mpg.html">Мужчины</a></li>
+          <li><a href="APg.html">Все подарки</a></li>
+        </ul>
       </div>
+      <input type="text" class="search" placeholder="Поиск товаров">
+    </div>
+  </nav>
+  <div class="ctr">
+    <div id="miniWindow">
+      <div id="miniWindowHeader">Аккаунт</div>
+      <div id="miniWindowContent">
+        <form>
+          <p>
+            <Label for="email"> Email:</Label>
+            <input type="email" placeholder="user@gmail.com" id="email" name="email" />
+          </p>
+          <p>
+            <label for="phone">Телефон: </label>
+            <input type="tel" pattern="[0-9]{10}" placeholder="(XXX)-XXX-XXXX" id="phone" name="phone" />
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <button id="openWindowButton"><img id="User_png" src="User.png"></button>
+  </div>
+  <div id="Pr1">
+    <button id="Ring_b" onclick="scrollToElement1()"></button>
+    <button id="WClose_b" onclick="scrollToElement2()"></button>
+    <button id="Kosm_b" onclick="scrollToElement3()"></button>
+  </div>
+  <div id="Pr2">
+    <figure>
+      <img id="R1" src="R1.jpg">
+      <figcaption>Цена:1499</figcaption>
+    </figure>
+    <figure>
+      <img id="R1" src="R2.jpg">
+      <figcaption>Цена:2399</figcaption>
+    </figure>
+    <figure>
+      <img id="R1" src="R3.jpg">
+      <figcaption>Цена:2999</figcaption>
+    </figure>
+  </div>
+  <div id="Pr3">
+    <figure>
+      <img id="W1" src="W1.jpg">
+      <figcaption>Цена:1500</figcaption>
+    </figure>
+    <figure>
+      <img id="W1" src="W2.jpg">
+      <figcaption>Цена:5000</figcaption>
+    </figure>
+    <figure>
+      <img id="W1" src="w3.jpg">
+      <figcaption>Цена:7000</figcaption>
+    </figure>
+  </div>
+  <div id="Pr4">
+    <figure>
+      <img id="K1" src="K1.jpg"><figcaption>Цена:</figcaption>
+      <figcaption id="K1C"> 
+        <input type="text" value="1300" id="paramInput" readonly>
+        <button onclick="save1('paramInput')">В корзину</button>
+      </figcaption>
+    </figure>
+    <figure>
+      <img id="K1" src="K2.jpg">
+      <figcaption> Цена:3500
+        <button id="save">В корзину</button>
+      </figcaption>
+    </figure>
+    <figure>
+      <img id="K1" src="K3.jpg">
+      <figcaption>Цена:16000
+        <button id="save">В корзину</button>
+      </figcaption>
+    </figure>
+  </div>
 </body>
 <script>
   var openWindowButton = document.getElementById('openWindowButton');
@@ -74,8 +130,8 @@
     }
     else {
       miniWindow.style.display = 'none';
-    }
-
+    };
   });
 </script>
+
 </html>
